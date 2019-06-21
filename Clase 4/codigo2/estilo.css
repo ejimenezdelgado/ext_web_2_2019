@@ -1,21 +1,28 @@
-.col{
-    color:#fff;
-		float:left;
-		margin:2%;
-		width: 46%;
-}
-.one{
-  background-color: #e95b33;
+#container {
+	background-color: chartreuse;
+	width: 1000px;
+	height: 1000px;
 }
 
-.two{
-  background-color: #40b7d7;
+.col {
+	color: #fff;
+	float: left;
+	margin: 2%;
+	width: 46%;
 }
 
-@media screen and (max-width: 600px) { 
-	.col{
+.one {
+	background-color: #e95b33;
+}
+
+.two {
+	background-color: #40b7d7;
+}
+
+@media screen and (max-width: 600px) {
+	.col {
 		float: none;
-		margin:0;
+		margin: 0;
 		width: 100%;
 	}
 }
