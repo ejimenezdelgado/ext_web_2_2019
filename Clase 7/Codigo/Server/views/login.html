@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+
+<body>
+	<form id="login">
+		<label>Nombre:</label>
+		<input type="text" id="nombre" style="display:block;">
+		<br />
+		<label>contraseña:</label>
+		<input type="password" id="password">
+		<br />
+		<input type="button" id="send" value="submit">
+		<div id="result"></div>
+	</form>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function () {
+		$("#result").hide();
+		$("#send").click(function () {
+			var nombre = $("#nombre").val();
+			var password = $("#password").val();
+			$.post('http://localhost:3000', {
+				nombre: nombre,
+				password: password
+			}, function (data) {
+				$("#result").fadeIn('slow').html(data);
+			});
+		});
+	});
+</script>
+
+</html>
