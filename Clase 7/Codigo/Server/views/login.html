@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
 
 <head>
@@ -26,7 +26,7 @@
 		$("#send").click(function () {
 			var nombre = $("#nombre").val();
 			var password = $("#password").val();
-			$.post('http://localhost:3000', {
+			$.post('http://10.60.41.109:3000', {
 				nombre: nombre,
 				password: password
 			}, function (data) {

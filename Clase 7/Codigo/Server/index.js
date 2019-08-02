@@ -16,7 +16,8 @@ app.get('/test', function (req, res) {
 });
 
 router.get('/', function (req, res) {
-    res.send("Bienvenidos al mejor curso web del mundo mundial");
+    //res.send("Bienvenidos al mejor curso web del mundo mundial");
+    res.send("ERES EL SOFTWARE DE MI HARDWARE  8==========-)");
 });
 
 router.post('/', function (req, res) {
